@@ -27,12 +27,12 @@ export const ContactSection = () => {
         <motion.div variants={fadeInUp} className="mb-12">
           <Button
             variant="primary"
-            className="px-10 py-5 text-xl animate-pulse-slow"
-            onClick={() => window.location.href = 'mailto:contact@dexsafe.pro'}
+            className="px-10 py-5 text-xl animate-pulse-slow mx-auto"
+            onClick={() => window.open('https://t.me/sskutushev', '_blank')}
             whileHover={{ scale: 1.05, boxShadow: '0 0 20px #00e0be' }}
           >
             <Send className="w-6 h-6 mr-3" />
-            Связаться с нами
+            Связаться со мной
           </Button>
         </motion.div>
 
@@ -41,13 +41,13 @@ export const ContactSection = () => {
           <motion.div variants={fadeInUp} className="flex flex-col items-center p-6 bg-c-bg-primary rounded-2xl border border-c-border">
             <Mail className="w-8 h-8 text-c-primary mb-4" />
             <h3 className="text-lg font-bold text-c-text-primary mb-2">Email</h3>
-            <p className="text-c-text-secondary">contact@dexsafe.pro</p>
+            <p className="text-c-text-secondary">sskutushev@gmail.com</p>
           </motion.div>
           
           <motion.div variants={fadeInUp} className="flex flex-col items-center p-6 bg-c-bg-primary rounded-2xl border border-c-border">
             <Send className="w-8 h-8 text-c-primary mb-4" />
             <h3 className="text-lg font-bold text-c-text-primary mb-2">Telegram</h3>
-            <p className="text-c-text-secondary">@dexsafe_contact</p>
+            <p className="text-c-text-secondary">@sskutushev</p>
           </motion.div>
         </motion.div>
         
