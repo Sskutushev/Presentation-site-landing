@@ -4,7 +4,7 @@ import { PhoneMockup } from '../common/PhoneMockup'
 import { ShieldCheck, Leaf, TrendingUp, Send, Sparkles } from 'lucide-react'
 import { motion } from 'framer-motion'
 import { fadeInLeft, fadeInRight, staggerContainer, fadeInUp } from '../../lib/motionPresets'
-import videoSrc from '../../assets/IMG_6544.MP4?url'
+const videoSrc = '/IMG_6544.MP4';
 
 
 const features = [
