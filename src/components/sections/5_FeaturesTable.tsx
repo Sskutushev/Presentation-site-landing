@@ -43,10 +43,10 @@ export const FeaturesTable = () => {
           </p>
         </motion.div>
 
-        <div className="mt-20 overflow-x-auto">
+        <div className="mt-20">
           <div className="min-w-full inline-block align-middle">
             <motion.div variants={fadeInUp} className="overflow-hidden border border-c-border rounded-2xl shadow-2xl bg-white/5 backdrop-blur-md">
-              <table className="min-w-full divide-y divide-c-border">
+              <table className="min-w-full divide-y divide-c-border hidden sm:table">
                 <thead className="bg-c-bg-secondary/50 backdrop-blur-sm">
                   <tr>
                     <th scope="col" className="py-5 px-6 text-left text-lg font-bold text-c-text-primary">
@@ -93,6 +93,29 @@ export const FeaturesTable = () => {
                   ))}
                 </tbody>
               </table>
+
+              {/* Mobile / Stacked Layout */}
+              <div className="sm:hidden divide-y divide-c-border">
+                {features.map((feature, idx) => (
+                  <motion.div variants={fadeInUp} key={idx} className="p-4 bg-c-bg-secondary/50">
+                    <div className="text-lg font-bold text-c-text-primary mb-2">{feature.name}</div>
+                    <div className="grid grid-cols-3 gap-4 text-center">
+                      <div>
+                        <div className="text-c-text-secondary text-sm mb-1">DexSafe.Pro</div>
+                        {renderCheck(feature.dexsafe)}
+                      </div>
+                      <div>
+                        <div className="text-c-text-secondary text-sm mb-1">MetaMask</div>
+                        {renderCheck(feature.metamask)}
+                      </div>
+                      <div>
+                        <div className="text-c-text-secondary text-sm mb-1">Trust Wallet</div>
+                        {renderCheck(feature.trust)}
+                      </div>
+                    </div>
+                  </motion.div>
+                ))}
+              </div>
             </motion.div>
           </div>
         </div>

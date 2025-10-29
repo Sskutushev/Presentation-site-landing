@@ -76,7 +76,7 @@ export const RoadmapSection = () => {
                     </div>
 
                     {/* Иконка на линии */}
-                    <div className="absolute left-5 md:left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+                    <div className="absolute left-5 md:left-1/2 top-0 md:top-1/2 -translate-x-1/2 md:-translate-y-1/2">
                       <div className="relative w-14 h-14 bg-gradient-to-br from-c-primary to-emerald-400 rounded-full flex items-center justify-center ring-8 ring-c-bg-primary shadow-2xl animate-pulse">
                         <Icon className="w-7 h-7 text-c-bg-primary" />
                         {/* Glow ring */}

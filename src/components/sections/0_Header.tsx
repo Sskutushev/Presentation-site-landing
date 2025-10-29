@@ -64,7 +64,7 @@ export const Header = () => {
         
         {/* Mobile Navigation */}
         {mobileMenuOpen && (
-          <nav className="md:hidden py-6 border-t border-c-border">
+          <nav className="md:hidden py-6 border-t border-c-border bg-c-bg-secondary">
             <div className="flex flex-col space-y-4">
               {navItems.map((item) => (
                 <Link

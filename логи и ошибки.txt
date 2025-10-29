@@ -1,21 +1,25 @@
-19:05:18.266 Running build in Washington, D.C., USA (East) – iad1
-19:05:18.267 Build machine configuration: 2 cores, 8 GB
-19:05:18.611 Cloning github.com/Sskutushev/Presentation-site-landing (Branch: main, Commit: 44e238b)
-19:05:18.621 Previous build caches not available.
-19:05:19.610 Cloning completed: 999.000ms
-19:05:19.922 Running "vercel build"
-19:05:20.420 Vercel CLI 48.6.0
-19:05:20.995 Installing dependencies...
-19:05:25.641 
-19:05:25.642 added 183 packages in 4s
-19:05:25.642 
-19:05:25.642 36 packages are looking for funding
-19:05:25.643   run `npm fund` for details
-19:05:25.686 Running "npm run build"
-19:05:25.813 
-19:05:25.813 > dexsafe-wallet-pro@0.1.0 build
-19:05:25.814 > tsc && vite build
-19:05:25.814 
-19:05:29.570 src/components/common/Button.tsx(5,11): error TS2320: Interface 'ButtonProps' cannot simultaneously extend types 'Omit<ButtonHTMLAttributes<HTMLButtonElement>, "onAnimationStart" | "onDragStart" | "onDragEnd" | "onDrag">' and 'HTMLMotionProps<"button">'.
-19:05:29.570   Named property 'style' of types 'Omit<ButtonHTMLAttributes<HTMLButtonElement>, "onAnimationStart" | "onDragStart" | "onDragEnd" | "onDrag">' and 'HTMLMotionProps<"button">' are not identical.
-19:05:29.615 Error: Command "npm run build" exited with 2
+20:14:40.993 Running build in Washington, D.C., USA (East) – iad1
+20:14:40.994 Build machine configuration: 2 cores, 8 GB
+20:14:41.167 Cloning github.com/Sskutushev/Presentation-site-landing (Branch: main, Commit: 45e9faa)
+20:14:42.158 Cloning completed: 991.000ms
+20:14:42.270 Restored build cache from previous deployment (HsZ54EtsWNjsT74PEASXrw8LqRX1)
+20:14:42.588 Running "vercel build"
+20:14:42.994 Vercel CLI 48.6.0
+20:14:43.699 Installing dependencies...
+20:14:44.836 
+20:14:44.836 up to date in 821ms
+20:14:44.837 
+20:14:44.837 36 packages are looking for funding
+20:14:44.837   run `npm fund` for details
+20:14:44.868 Running "npm run build"
+20:14:44.977 
+20:14:44.977 > dexsafe-wallet-pro@0.1.0 build
+20:14:44.978 > tsc && vite build
+20:14:44.978 
+20:14:48.684 src/components/sections/5_FeaturesTable.tsx(56,28): error TS2322: Type '{ children: (string | Element)[]; class: string; }' is not assignable to type 'DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>'.
+20:14:48.685   Property 'class' does not exist on type 'DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>'. Did you mean 'className'?
+20:14:48.685 src/components/sections/5_FeaturesTable.tsx(62,28): error TS2322: Type '{ children: (string | Element)[]; class: string; }' is not assignable to type 'DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>'.
+20:14:48.685   Property 'class' does not exist on type 'DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>'. Did you mean 'className'?
+20:14:48.686 src/components/sections/5_FeaturesTable.tsx(68,28): error TS2322: Type '{ children: (string | Element)[]; class: string; }' is not assignable to type 'DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>'.
+20:14:48.686   Property 'class' does not exist on type 'DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>'. Did you mean 'className'?
+20:14:48.707 Error: Command "npm run build" exited with 2
