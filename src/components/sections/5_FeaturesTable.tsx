@@ -53,19 +53,19 @@ export const FeaturesTable = () => {
                       Фича
                     </th>
                     <th scope="col" className="py-5 px-6 text-center text-lg font-bold text-c-text-primary bg-gradient-to-r from-c-primary/10 to-transparent">
-                      <div class="flex items-center justify-center">
+                      <div className="flex items-center justify-center">
                         <img src="/Logo.png" alt="DexSafe.Pro Logo" className="w-[20px] h-[20px] mr-2" />
                         DexSafe.Pro
                       </div>
                     </th>
                     <th scope="col" className="py-5 px-6 text-center text-lg font-bold text-c-text-secondary">
-                      <div class="flex items-center justify-center">
+                      <div className="flex items-center justify-center">
                         <img src="https://cdn.worldvectorlogo.com/logos/metamask.svg" alt="MetaMask Logo" className="w-[15px] h-[15px] mr-2" />
                         MetaMask
                       </div>
                     </th>
                     <th scope="col" className="py-5 px-6 text-center text-lg font-bold text-c-text-secondary">
-                      <div class="flex items-center justify-center">
+                      <div className="flex items-center justify-center">
                         <img src="/4803621-middle.png" alt="Trust Wallet Logo" className="w-[15px] h-[15px] mr-2" />
                         Trust Wallet
                       </div>
