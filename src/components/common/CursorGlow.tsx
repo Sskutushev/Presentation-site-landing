@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 
-export const CursorGlow = () => {
+export default function CursorGlow() {
   const [mousePosition, setMousePosition] = useState({ x: -200, y: -200 });
 
   useEffect(() => {
@@ -23,8 +23,8 @@ export const CursorGlow = () => {
         background: 'radial-gradient(circle, #00E0BE, transparent 60%)',
       }}
       animate={{
-        x: mousePosition.x,
-        y: mousePosition.y,
+        x: mousePosition.x - 200,
+        y: mousePosition.y - 200,
       }}
       transition={{
         type: 'tween',

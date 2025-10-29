@@ -1,4 +1,4 @@
-import { CursorGlow } from './components/common/CursorGlow'
+import CursorGlow from './components/common/CursorGlow'
 import { Header } from './components/sections/0_Header'
 import { HeroSection } from './components/sections/1_HeroSection'
 import { ProblemSection } from './components/sections/2_ProblemSection'
