@@ -59,7 +59,7 @@ export const SolutionSection = () => {
         </motion.div>
 
         {/* Правая часть: Визуал */}
-        <motion.div variants={fadeInRight} className="flex items-center justify-center lg:justify-end">
+        <motion.div variants={fadeInRight} className="flex items-center justify-center lg:justify-end mt-2.5">
           <PhoneMockup>
             <video
               src={videoSrc}

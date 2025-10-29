@@ -22,7 +22,7 @@ export const HeroSection = () => {
           <motion.h1 variants={fadeInUp} initial="initial" whileInView="whileInView" viewport={{ once: true }} className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-c-text-primary leading-tight">
             Web3-кошелек, который
             <span className="block text-4xl md:text-5xl lg:text-6xl mt-2 bg-gradient-to-r from-c-primary to-green-400 bg-clip-text text-transparent animate-hue">
-              _думает_ за вас
+              думает за вас
             </span>
           </motion.h1>
           
@@ -59,12 +59,12 @@ export const HeroSection = () => {
           className="flex items-center justify-center relative"
         >
           <motion.div 
-            className="relative w-full max-w-md h-80 bg-gradient-to-br from-c-bg-secondary to-c-bg-tertiary rounded-3xl flex items-center justify-center border border-c-border shadow-2xl"
+            className="relative w-full max-w-lg h-96 bg-gradient-to-br from-c-bg-secondary to-c-bg-tertiary rounded-3xl flex items-center justify-center border border-c-border shadow-2xl"
             whileHover={{ rotateY: 10, rotateX: 5, scale: 1.02 }}
             transition={{ duration: 0.3 }}
           >
             <div className="absolute inset-0 bg-gradient-to-br from-c-primary/10 to-transparent rounded-3xl"></div>
-            <span className="relative text-c-text-tertiary text-lg font-medium">[3D-визуализация кошелька]</span>
+            <img src="/Wallet.png" alt="Wallet visualization" className="w-full h-full object-contain" />
             
             {/* Добавляем элементы для стилизации */}
             <div className="absolute -top-4 -right-4 w-24 h-24 rounded-full bg-c-primary/20 blur-xl"></div>

@@ -33,9 +33,9 @@ export const UpaSection = () => {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
         {/* Левая часть: Визуал */}
         <motion.div variants={fadeInLeft} initial="hidden" whileInView="show" viewport={{ once: true }} className="flex items-center justify-center relative">
-          <div className="relative w-full h-96 bg-c-bg-primary rounded-3xl flex items-center justify-center border border-c-border shadow-2xl overflow-hidden">
+          <div className="relative w-[576px] h-[414px] bg-c-bg-primary rounded-3xl flex items-center justify-center border border-c-border shadow-2xl overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-br from-c-primary/5 to-transparent"></div>
-            <span className="relative text-c-text-tertiary text-lg font-medium z-10">[Интерактивная схема UPA Engine]</span>
+            <img src="/UPA.png" alt="UPA Engine schema" className="w-full h-full object-contain" />
             
             {/* Анимированные элементы */}
             <div className="absolute top-1/4 left-1/4 w-16 h-16 rounded-full bg-c-primary/10 blur-xl animate-pulse"></div>

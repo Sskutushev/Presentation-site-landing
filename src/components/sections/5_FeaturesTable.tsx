@@ -30,11 +30,11 @@ export const FeaturesTable = () => {
     <AnimatedSection id="features" className="py-24 sm:py-32">
       <motion.div variants={staggerContainer} initial="hidden" whileInView="show" viewport={{ once: true }}>
         <motion.div variants={fadeInUp} className="text-center max-w-3xl mx-auto">
-          <div className="inline-flex items-center px-4 py-2 bg-c-bg-secondary rounded-full border border-c-border mb-6">
+          <div className="inline-flex items-center px-4 py-2 bg-c-bg-secondary rounded-full border border-c-border mb-4">
             <span className="text-c-text-secondary text-sm">Конкурентный анализ</span>
           </div>
           
-          <h2 className="text-4xl md:text-5xl font-extrabold text-c-text-primary mb-6 relative inline-block">
+          <h2 className="text-4xl md:text-5xl font-extrabold text-c-text-primary mb-6 relative">
             Почему мы уникальны
             <span className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-2/3 h-1 bg-gradient-to-r from-transparent via-c-primary to-transparent rounded-full"></span>
           </h2>
@@ -53,13 +53,22 @@ export const FeaturesTable = () => {
                       Фича
                     </th>
                     <th scope="col" className="py-5 px-6 text-center text-lg font-bold text-c-text-primary bg-gradient-to-r from-c-primary/10 to-transparent">
-                      DexSafe.Pro
+                      <div class="flex items-center justify-center">
+                        <img src="/Logo.png" alt="DexSafe.Pro Logo" className="w-[20px] h-[20px] mr-2" />
+                        DexSafe.Pro
+                      </div>
                     </th>
                     <th scope="col" className="py-5 px-6 text-center text-lg font-bold text-c-text-secondary">
-                      MetaMask
+                      <div class="flex items-center justify-center">
+                        <img src="https://cdn.worldvectorlogo.com/logos/metamask.svg" alt="MetaMask Logo" className="w-[15px] h-[15px] mr-2" />
+                        MetaMask
+                      </div>
                     </th>
                     <th scope="col" className="py-5 px-6 text-center text-lg font-bold text-c-text-secondary">
-                      Trust Wallet
+                      <div class="flex items-center justify-center">
+                        <img src="/4803621-middle.png" alt="Trust Wallet Logo" className="w-[15px] h-[15px] mr-2" />
+                        Trust Wallet
+                      </div>
                     </th>
                   </tr>
                 </thead>
