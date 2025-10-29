@@ -1,0 +1,18 @@
+chunk-SB5BK2J2.js?v=f6681e00:519 Warning: React does not recognize the `whileHover` prop on a DOM element. If you intentionally want it to appear in the DOM as a custom attribute, spell it as lowercase `whilehover` instead. If you accidentally passed it from a parent component, remove it from the DOM element.
+    at div
+    at div
+    at div
+    at MotionComponent (http://localhost:5173/node_modules/.vite/deps/framer-motion.js?v=f6681e00:275:40)
+    at div
+    at div
+    at div
+    at div
+    at MotionComponent (http://localhost:5173/node_modules/.vite/deps/framer-motion.js?v=f6681e00:275:40)
+    at div
+    at Container (http://localhost:5173/src/components/Container.tsx:17:29)
+    at section
+    at MotionComponent (http://localhost:5173/node_modules/.vite/deps/framer-motion.js?v=f6681e00:275:40)
+    at AnimatedSection (http://localhost:5173/src/components/common/AnimatedSection.tsx:19:35)
+    at RoadmapSection
+    at main
+    at App

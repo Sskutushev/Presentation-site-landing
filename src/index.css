@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply text-c-text-primary antialiased overflow-x-hidden;
+    background-color: #0d0f13; /* Fallback */
+    background-image: radial-gradient(ellipse at top, #1b1f28 0%, #0d0f13 100%);
+    font-family: 'Inter', sans-serif;
+  }
+
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    background-image: url('/noise.svg');
+    opacity: 0.05; /* Reduced opacity for subtlety */
+    z-index: 100;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Кастомный scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #1A1D25; /* Updated to use hex code directly */
+}
+::-webkit-scrollbar-thumb {
+  background: #2A2D35; /* Updated to use hex code directly */
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #00E0BE; /* Updated to use hex code directly */
+}
