@@ -2,13 +2,11 @@ import { ButtonHTMLAttributes, ReactNode } from 'react'
 import { motion, HTMLMotionProps } from 'framer-motion'
 import { Loader2 } from 'lucide-react'
 
-interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement>, HTMLMotionProps<'button'> {
   variant?: 'primary' | 'secondary' | 'outline' | 'gradient'
   loading?: boolean
   children: ReactNode
 }
-
-type MotionButtonProps = HTMLMotionProps<'button'>;
 
 export const Button = ({
   variant = 'primary',
@@ -32,12 +30,12 @@ export const Button = ({
       className={`        ${variants[variant]}
         ${disabled || loading ? 'opacity-50 cursor-not-allowed' : ''}
         px-6 py-3 rounded-lg font-bold transition-all duration-300
-        flex items-center justify-center gap-2
         shadow-lg hover:shadow-xl
+        flex items-center justify-center gap-2
         ${className}
      `}
       disabled={disabled || loading}
-      {...props as MotionButtonProps}>
+      {...props}>
       {loading && <Loader2 className="w-5 h-5 animate-spin" />}
       {children}
     </motion.button>

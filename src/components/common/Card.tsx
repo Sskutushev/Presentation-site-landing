@@ -1,13 +1,13 @@
 import { ReactNode } from 'react'
-import { motion } from 'framer-motion'
+import { motion, HTMLMotionProps } from 'framer-motion'
 
-interface CardProps {
+interface CardProps extends HTMLMotionProps<'div'> {
   children: ReactNode
   className?: string
   onClick?: () => void
 }
 
-export const Card = ({ children, className = '', onClick }: CardProps) => {
+export const Card = ({ children, className = '', onClick, ...props }: CardProps) => {
   return (
     <motion.div
       className={`        bg-c-bg-secondary
@@ -17,7 +17,8 @@ export const Card = ({ children, className = '', onClick }: CardProps) => {
         ${onClick ? 'cursor-pointer hover:bg-c-bg-tertiary transition-colors' : ''}
         ${className}
      `}
-      onClick={onClick}>
+      onClick={onClick}
+      {...props}>
       {children}
     </motion.div>
   )
