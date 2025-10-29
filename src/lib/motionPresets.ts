@@ -2,7 +2,6 @@
 export const fadeInUp = {
   initial: { opacity: 0, y: 40 },
   whileInView: { opacity: 1, y: 0 },
-  transition: { duration: 0.6, ease: 'easeOut' },
 }
 
 export const staggerContainer = {
@@ -15,11 +14,10 @@ export const staggerContainer = {
 export const fadeInLeft = {
   initial: { opacity: 0, x: -60 },
   whileInView: { opacity: 1, x: 0 },
-  transition: { duration: 0.6 },
 }
 
 export const fadeInRight = {
   initial: { opacity: 0, x: 60 },
   whileInView: { opacity: 1, x: 0 },
-  transition: { duration: 0.6 },
 }
+

@@ -2,7 +2,7 @@ import { ButtonHTMLAttributes, ReactNode } from 'react'
 import { motion, HTMLMotionProps } from 'framer-motion'
 import { Loader2 } from 'lucide-react'
 
-interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement>, HTMLMotionProps<'button'> {
+interface ButtonProps extends Omit<ButtonHTMLAttributes<HTMLButtonElement>, 'onAnimationStart'>, HTMLMotionProps<'button'> {
   variant?: 'primary' | 'secondary' | 'outline' | 'gradient'
   loading?: boolean
   children: ReactNode

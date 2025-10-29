@@ -64,8 +64,7 @@ export const RoadmapSection = () => {
                   >
                     {/* Контент */}
                     <div className={`md:w-1/2 ${isOdd ? 'md:pl-16' : 'md:pr-16'} md:ml-0 ml-12`}>
-                      <div className="bg-c-bg-secondary p-8 rounded-3xl border border-c-border shadow-xl hover:border-c-primary/50 transition-all duration-300"
-                        // Remove hover-lift, as it's not explicitly in the plan for this element
+                      <motion.div className="bg-c-bg-secondary p-8 rounded-3xl border border-c-border shadow-xl hover:border-c-primary/50 transition-all duration-300"
                         whileHover={{y: -5, boxShadow: '0 0 25px rgba(0, 224, 190, 0.2)'}}
                         transition={{duration: 0.2}}
                       >
@@ -73,7 +72,7 @@ export const RoadmapSection = () => {
                           {item.title}
                         </h3>
                         <p className="text-c-text-secondary">{item.text}</p>
-                      </div>
+                      </motion.div>
                     </div>
 
                     {/* Иконка на линии */}
