@@ -140,6 +140,7 @@ export const Header = () => {
             <button
               className="md:hidden text-c-text-primary"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              data-testid="mobile-menu-button"
             >
               {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>

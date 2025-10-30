@@ -63,7 +63,7 @@ const ButtonComponent = ({
       {...props}
     >
       {/* Иконка загрузки при состоянии loading */}
-      {loading && <Loader2 className="w-5 h-5 animate-spin" />}
+      {loading && <Loader2 className="w-5 h-5 animate-spin" role="img" aria-label="Loading" />}
       {children}
     </motion.button>
   );

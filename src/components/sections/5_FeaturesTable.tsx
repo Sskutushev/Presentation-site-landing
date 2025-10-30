@@ -51,16 +51,10 @@ export const FeaturesTable = () => {
       return <Check className="w-8 h-8 text-c-primary mx-auto" />;
     }
     if (value === 'ui') {
-      return (
-        <span className="text-c-primary font-bold text-base">
-          {t('features.ui_ready')}
-        </span>
-      );
+      return <span className="text-c-primary font-bold text-base">{t('features.ui_ready')}</span>;
     }
     if (value === 'partial') {
-      return (
-        <span className="text-c-text-tertiary text-sm">          {t('features.partial')}</span>
-      );
+      return <span className="text-c-text-tertiary text-sm"> {t('features.partial')}</span>;
     }
     return <X className="w-8 h-8 text-c-text-tertiary mx-auto" />;
   };
@@ -75,18 +69,14 @@ export const FeaturesTable = () => {
       >
         <motion.div variants={fadeInUp} className="text-center max-w-3xl mx-auto">
           <div className="inline-flex items-center px-4 py-2 bg-c-bg-secondary rounded-full border border-c-border mb-4">
-            <span className="text-c-text-secondary text-sm">
-              {t('features.title')}
-            </span>
+            <span className="text-c-text-secondary text-sm">{t('features.title')}</span>
           </div>
 
           <h2 className="text-4xl md:text-5xl font-extrabold text-c-text-primary mb-6 relative">
             {t('features.sub_title')}
             <span className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-2/3 h-1 bg-gradient-to-r from-transparent via-c-primary to-transparent rounded-full"></span>
           </h2>
-          <p className="text-xl text-c-text-secondary">
-            {t('features.description')}
-          </p>
+          <p className="text-xl text-c-text-secondary">{t('features.description')}</p>
         </motion.div>
 
         <div className="mt-20">
