@@ -17,20 +17,27 @@ vi.mock('react-i18next', () => ({
     return {
       t: (key: string) => {
         switch (key) {
-          case 'header.problem': return 'Problem';
-          case 'header.solution': return 'Solution';
-          case 'header.upa': return 'UPA Engine';
-          case 'header.status': return 'Status';
-          case 'header.roadmap': return 'Roadmap';
-          case 'header.contact': return 'Contact';
-          default: return key;
-        },
-        i18n: {
-          changeLanguage: vi.fn(),
-          language: 'en',
-        },
-      };
-    },
+          case 'header.problem':
+            return 'Problem';
+          case 'header.solution':
+            return 'Solution';
+          case 'header.upa':
+            return 'UPA Engine';
+          case 'header.status':
+            return 'Status';
+          case 'header.roadmap':
+            return 'Roadmap';
+          case 'header.contact':
+            return 'Contact';
+          default:
+            return key;
+        }
+      },
+      i18n: {
+        changeLanguage: vi.fn(),
+        language: 'en',
+      },
+    };
   },
 }));
 

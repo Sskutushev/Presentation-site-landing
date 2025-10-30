@@ -55,7 +55,13 @@ export const Header = () => {
         {/* Основной контейнер шапки */}
         <div className="flex items-center justify-between h-full">
           {/* Блок логотипа */}
-          <Link to="hero" smooth={true} duration={500} className="cursor-pointer flex items-center" data-testid="logo-link">
+          <Link
+            to="hero"
+            smooth={true}
+            duration={500}
+            className="cursor-pointer flex items-center"
+            data-testid="logo-link"
+          >
             <img src="/Logo.png" alt="DexSafe.Pro Logo" className="w-[60px] h-[60px] mr-4" />
             <h1 className="text-2xl font-bold text-c-text-primary hover:text-c-primary transition-colors">
               DexSafe<span className="text-c-primary">.Pro</span>
