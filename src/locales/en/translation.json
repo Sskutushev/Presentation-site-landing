@@ -36,7 +36,7 @@
   },
   "solution": {
     "badge": "Solution",
-    "title": "Web3 in your Telegram",
+    "title": "Native in Telegram",
     "description": "We created not just a wallet, but an intelligent assistant that lives in your messenger. Secure, convenient and always at hand.",
     "features": [
       {
@@ -44,20 +44,24 @@
         "text": "Keys are encrypted (AES-256) and stored only with you."
       },
       {
-        "title": "Default Environmentally Friendly",
+        "title": "Focus on Eco-Chain",
         "text": "Priority on low carbon footprint blockchains."
       },
       {
         "title": "DeFi & RWA Hub",
         "text": "Ready UI for P2P lending and tokenized assets."
+      },
+      {
+        "title": "RWA Integration (DFA)",
+        "text": "Full support for tokenized real-world assets."
       }
     ],
     "button": "Launch Telegram Bot"
   },
   "upa": {
     "badge": "Our Main Asset (USP)",
-    "title": "UPA Engine:",
-    "highlight": "SBP for Blockchain",
+    "title": "Why We Are Unique",
+    "highlight": "Fast Payment System for Blockchain",
     "description": "Forget about networks, bridges and gas. UPA (Universal Payment Agent) is your intelligent assistant that makes cross-chain transfers as simple as bank transfers.",
     "steps": [
       {
@@ -76,7 +80,49 @@
   },
   "features": {
     "title": "Feature Table",
-    "description": "Detailed comparison of capabilities"
+    "sub_title": "Why We Are Unique",
+    "description": "Detailed comparison of capabilities",
+    "feature": "Feature",
+    "ui_ready": "UI Ready",
+    "partial": "Partial",
+    "items": [
+      {
+        "name": "UPA Engine (SBP)",
+        "dexsafe": true,
+        "metamask": false,
+        "trust": false
+      },
+      {
+        "name": "RWA Integration (DFA)",
+        "dexsafe": "ui",
+        "metamask": false,
+        "trust": false
+      },
+      {
+        "name": "DeFi Lending Hub",
+        "dexsafe": "ui",
+        "metamask": false,
+        "trust": "partial"
+      },
+      {
+        "name": "Focus on Eco-Chain",
+        "dexsafe": true,
+        "metamask": false,
+        "trust": false
+      },
+      {
+        "name": "Native in Telegram",
+        "dexsafe": true,
+        "metamask": false,
+        "trust": false
+      },
+      {
+        "name": "Gamification (SocialFi)",
+        "dexsafe": "ui",
+        "metamask": false,
+        "trust": "partial"
+      }
+    ]
   },
   "status": {
     "badge": "Current Status",
@@ -94,9 +140,9 @@
     "ui_ready_items": [
       "UPA Engine (Frontend + API)",
       "DeFi Hub (Mock data)",
-      "Gamification (Mock data)",
+      "Gamification (SocialFi)",
       "Token List (Mock data)",
-      "Tests (Written but unstable)"
+      "Tests (Written but partially stable)"
     ],
     "ready_note": "Product ready for integration with your backend"
   },

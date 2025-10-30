@@ -47,8 +47,8 @@ export const Header = () => {
   return (
     // Анимированный заголовок с эффектами при скролле
     <motion.header
-      style={{ height, opacity }}
-      className="sticky top-0 z-50 w-full bg-c-bg-secondary/70 backdrop-blur-xl border-b border-c-border"
+      style={{ height, opacity: mobileMenuOpen ? 1 : opacity }}
+      className={`sticky top-0 z-50 w-full border-b border-c-border ${mobileMenuOpen ? 'bg-c-bg-secondary' : 'bg-c-bg-secondary/70 backdrop-blur-xl'}`}
     >
       {/* Обертка для центрирования контента */}
       <Container>
@@ -148,8 +148,8 @@ export const Header = () => {
 
         {/* Основной блок: Мобильная навигация */}
         {mobileMenuOpen && (
-          <nav className="md:hidden py-6 border-t border-c-border bg-c-bg-secondary">
-            <div className="flex flex-col space-y-4">
+          <nav className="md:hidden py-6 border-t border-c-border !bg-c-bg-secondary z-40 rounded-xl">
+            <div className="flex flex-col space-y-4 items-center">
               {navItems.map((item) => (
                 <Link
                   key={item.label}
@@ -157,7 +157,7 @@ export const Header = () => {
                   smooth={true}
                   duration={500}
                   offset={-80}
-                  className="text-c-text-secondary hover:text-c-primary font-medium transition-colors cursor-pointer py-2"
+                  className="text-c-text-secondary hover:text-c-primary font-medium transition-colors cursor-pointer py-2 text-center"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   {item.label}

@@ -9,37 +9,37 @@ export const FeaturesTable = () => {
 
   const features = [
     {
-      name: t('features.items.0.name', 'UPA Engine (СБП)'),
+      name: t('features.items.0.name'),
       dexsafe: true,
       metamask: false,
       trust: false,
     },
     {
-      name: t('features.items.1.name', 'Интеграция RWA (ЦФА)'),
+      name: t('features.items.1.name'),
       dexsafe: 'ui',
       metamask: false,
       trust: false,
     },
     {
-      name: t('features.items.2.name', 'DeFi Lending Hub'),
+      name: t('features.items.2.name'),
       dexsafe: 'ui',
       metamask: false,
       trust: 'partial',
     },
     {
-      name: t('features.items.3.name', 'Фокус на Eco-Chain'),
+      name: t('features.items.3.name'),
       dexsafe: true,
       metamask: false,
       trust: false,
     },
     {
-      name: t('features.items.4.name', 'Нативность в Telegram'),
+      name: t('features.items.4.name'),
       dexsafe: true,
       metamask: false,
       trust: false,
     },
     {
-      name: t('features.items.5.name', 'Геймификация (SocialFi)'),
+      name: t('features.items.5.name'),
       dexsafe: 'ui',
       metamask: false,
       trust: 'partial',
@@ -53,13 +53,13 @@ export const FeaturesTable = () => {
     if (value === 'ui') {
       return (
         <span className="text-c-primary font-bold text-base">
-          {t('features.ui_ready', 'UI Готов')}
+          {t('features.ui_ready')}
         </span>
       );
     }
     if (value === 'partial') {
       return (
-        <span className="text-c-text-tertiary text-sm">{t('features.partial', 'Частично')}</span>
+        <span className="text-c-text-tertiary text-sm">          {t('features.partial')}</span>
       );
     }
     return <X className="w-8 h-8 text-c-text-tertiary mx-auto" />;
@@ -76,16 +76,16 @@ export const FeaturesTable = () => {
         <motion.div variants={fadeInUp} className="text-center max-w-3xl mx-auto">
           <div className="inline-flex items-center px-4 py-2 bg-c-bg-secondary rounded-full border border-c-border mb-4">
             <span className="text-c-text-secondary text-sm">
-              {t('features.title', 'Конкурентный анализ')}
+              {t('features.title')}
             </span>
           </div>
 
           <h2 className="text-4xl md:text-5xl font-extrabold text-c-text-primary mb-6 relative">
-            {t('features.sub_title', 'Почему мы уникальны')}
+            {t('features.sub_title')}
             <span className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-2/3 h-1 bg-gradient-to-r from-transparent via-c-primary to-transparent rounded-full"></span>
           </h2>
           <p className="text-xl text-c-text-secondary">
-            {t('features.description', 'Сравнение возможностей различных решений')}
+            {t('features.description')}
           </p>
         </motion.div>
 
@@ -102,7 +102,7 @@ export const FeaturesTable = () => {
                       scope="col"
                       className="py-5 px-6 text-left text-lg font-bold text-c-text-primary"
                     >
-                      {t('features.feature', 'Фича')}
+                      {t('features.feature')}
                     </th>
                     <th
                       scope="col"

@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import { staggerContainer, fadeInLeft, fadeInRight } from '../../lib/motionPresets';
 import { useTranslation } from 'react-i18next'; // Хук для перевода
 
+// Force Vite re-evaluation
 export const RoadmapSection = () => {
   const { t } = useTranslation(); // Хук для перевода
 
@@ -76,8 +77,8 @@ export const RoadmapSection = () => {
                       </motion.div>
                     </div>
 
-                    {/* Иконка на линии */}
-                    <div className="absolute left-5 md:left-1/2 top-0 md:top-1/2 -translate-x-1/2 md:-translate-y-1/2">
+                    {/* Иконка на линии (для десктопа) */}
+                    <div className="hidden md:block absolute left-5 md:left-1/2 top-0 md:top-1/2 -translate-x-1/2 md:-translate-y-1/2">
                       <div className="relative w-14 h-14 bg-gradient-to-br from-c-primary to-emerald-400 rounded-full flex items-center justify-center ring-8 ring-c-bg-primary shadow-2xl animate-pulse">
                         <Icon className="w-7 h-7 text-c-bg-primary" />
                         {/* Glow ring */}
@@ -85,6 +86,28 @@ export const RoadmapSection = () => {
                       </div>
                     </div>
                   </motion.div>
+                );
+              })}
+            </div>
+
+            {/* Мобильные иконки (видны только на мобильных) */}
+            <div className="md:hidden absolute top-0 left-0 w-full h-full">
+              {roadmap.map((item, index) => {
+                const Icon = item.icon;
+                // Calculate top position for each icon to create 50px spacing
+                const topPosition = index * (16 * 4 + 180); // 16*4 is space-y-16, 50 is desired icon spacing
+                return (
+                  <div
+                    key={`mobile-icon-${index}`}
+                    className="absolute left-5 -translate-x-1/2"
+                    style={{ top: `${topPosition}px` }}
+                  >
+                    <div className="relative w-14 h-14 bg-gradient-to-br from-c-primary to-emerald-400 rounded-full flex items-center justify-center ring-8 ring-c-bg-primary shadow-2xl animate-pulse">
+                      <Icon className="w-7 h-7 text-c-bg-primary" />
+                      {/* Glow ring */}
+                      <span className="absolute inset-0 rounded-full bg-c-primary opacity-30 blur-md animate-ping ease-out"></span>
+                    </div>
+                  </div>
                 );
               })}
             </div>
