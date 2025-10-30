@@ -1,15 +1,22 @@
+/* Импорты слоев Tailwind CSS */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Базовые стили приложения */
 @layer base {
   body {
     @apply text-c-text-primary antialiased overflow-x-hidden;
-    background-color: #0d0f13; /* Fallback */
-    background-image: radial-gradient(ellipse at top, #1b1f28 0%, #0d0f13 100%);
-    font-family: 'Inter', sans-serif;
+    background-color: #0d0f13; /* Резервный цвет фона */
+    background-image: radial-gradient(
+      ellipse at top,
+      #1b1f28 0%,
+      #0d0f13 100%
+    ); /* Радиальный градиент фона */
+    font-family: 'Inter', sans-serif; /* Основное семейство шрифтов */
   }
 
+  /* Вспомогательный элемент: текстура шума */
   body::before {
     content: '';
     position: fixed;
@@ -18,27 +25,28 @@
     width: 100vw;
     height: 100vh;
     pointer-events: none;
-    background-image: url('/noise.svg');
-    opacity: 0.05; /* Reduced opacity for subtlety */
+    background-image: url('/noise.svg'); /* Файл текстуры */
+    opacity: 0.05; /* Низкая прозрачность для субтльности */
     z-index: 100;
   }
 
+  /* Основной элемент: плавная прокрутка */
   html {
     scroll-behavior: smooth;
   }
 }
 
-/* Кастомный scrollbar */
+/* Вспомогательный стиль: кастомный скроллбар */
 ::-webkit-scrollbar {
   width: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: #1A1D25; /* Updated to use hex code directly */
+  background: #1a1d25; /* Цвет фона полосы прокрутки */
 }
 ::-webkit-scrollbar-thumb {
-  background: #2A2D35; /* Updated to use hex code directly */
+  background: #2a2d35; /* Цвет ползунка прокрутки */
   border-radius: 3px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #00E0BE; /* Updated to use hex code directly */
+  background: #00e0be; /* Цвет ползунка при наведении */
 }

@@ -1,0 +1,137 @@
+{
+  "hero": {
+    "badge": "Web3 Revolution",
+    "title": "Web3 wallet that",
+    "title_highlight": "thinks for you",
+    "description": "Introducing the <strong>UPA Engine</strong> - an intelligent <strong>Fast Payment System</strong> for the blockchain world.",
+    "button_more": "Learn more",
+    "button_bot": "Launch Bot"
+  },
+  "header": {
+    "problem": "Problem",
+    "solution": "Solution",
+    "upa": "UPA Engine",
+    "status": "Status",
+    "roadmap": "Roadmap",
+    "contact": "Contact"
+  },
+  "problem": {
+    "badge": "Problem",
+    "title": "Web3 is still complex. We fixed it.",
+    "description": "These problems prevent mass adoption of Web3 technologies",
+    "items": [
+      {
+        "title": "Fragmentation and Complexity",
+        "text": "Dozens of networks, bridges, and tokens. The user gets lost in technical details, which is the main barrier to mass adoption."
+      },
+      {
+        "title": "Dumb Wallets",
+        "text": "Existing wallets (MetaMask) are passive executors. They don't answer the question: \"How should I *best* send $100 from network A to network B?\""
+      },
+      {
+        "title": "High Risks and Barriers",
+        "text": "Fees, 'gas', phishing addresses, suboptimal swaps. Users lose money at every step without an assistant."
+      }
+    ]
+  },
+  "solution": {
+    "badge": "Solution",
+    "title": "Web3 in your Telegram",
+    "description": "We created not just a wallet, but an intelligent assistant that lives in your messenger. Secure, convenient and always at hand.",
+    "features": [
+      {
+        "title": "100% Non-Custodial",
+        "text": "Keys are encrypted (AES-256) and stored only with you."
+      },
+      {
+        "title": "Default Environmentally Friendly",
+        "text": "Priority on low carbon footprint blockchains."
+      },
+      {
+        "title": "DeFi & RWA Hub",
+        "text": "Ready UI for P2P lending and tokenized assets."
+      }
+    ],
+    "button": "Launch Telegram Bot"
+  },
+  "upa": {
+    "badge": "Our Main Asset (USP)",
+    "title": "UPA Engine:",
+    "highlight": "SBP for Blockchain",
+    "description": "Forget about networks, bridges and gas. UPA (Universal Payment Agent) is your intelligent assistant that makes cross-chain transfers as simple as bank transfers.",
+    "steps": [
+      {
+        "title": "1. AI Analysis",
+        "text": "You enter an address. The UPA Engine analyzes it: \"Is this an exchange? A private wallet? Which network does it prefer?\""
+      },
+      {
+        "title": "2. Multi-Routing",
+        "text": "The engine calculates 10+ routes (swaps, bridges, L2) for your transaction in real-time."
+      },
+      {
+        "title": "3. Optimal Path",
+        "text": "UPA offers you ONE, the cheapest, fastest and most environmentally friendly route. Turning 5 clicks into 1."
+      }
+    ]
+  },
+  "features": {
+    "title": "Feature Table",
+    "description": "Detailed comparison of capabilities"
+  },
+  "status": {
+    "badge": "Current Status",
+    "title": "Ready product, not just an idea",
+    "description": "You get a ready, secure and optimized Frontend product, saving at least <highlight>6 months</highlight> of R&D team work.",
+    "done_title": "✅ Implemented",
+    "ui_ready_title": "🟠 UI Ready (Backend Required)",
+    "done_items": [
+      "Wallet Core (100%)",
+      "Secure Storage (AES)",
+      "Send/Receive XEC",
+      "Complete Design System",
+      "Optimization (Code Splitting)"
+    ],
+    "ui_ready_items": [
+      "UPA Engine (Frontend + API)",
+      "DeFi Hub (Mock data)",
+      "Gamification (Mock data)",
+      "Token List (Mock data)",
+      "Tests (Written but unstable)"
+    ],
+    "ready_note": "Product ready for integration with your backend"
+  },
+  "roadmap": {
+    "badge": "Development Plan",
+    "title": "Scaling from MVP to Ecosystem",
+    "description": "Clear product development plan",
+    "phases": [
+      {
+        "title": "Phase 1: Backend & UPA API",
+        "text": "Implementation of UPA Engine backend logic, deployment of smart contracts for DeFi and gamification."
+      },
+      {
+        "title": "Phase 2: Browser Extension",
+        "text": "Porting functionality to Chrome, Firefox, and Brave extensions. Sync with Mini App."
+      },
+      {
+        "title": "Phase 3: Mobile Native",
+        "text": "Launching full native apps for iOS and Android for maximum audience reach."
+      },
+      {
+        "title": "Phase 4: P2P & Advanced",
+        "text": "Launching P2P Marketplace, NFT integration, staking, and hardware wallet support."
+      }
+    ]
+  },
+  "contact": {
+    "badge": "Contact Us",
+    "title": "Interested in the project?",
+    "description": "DexSafe Pro is the perfect \"accelerator\" for L1/L2 funds, exchanges (CEX) or venture investors looking to capture the fastest growing Web3 market — Telegram.",
+    "button": "Contact me",
+    "email_title": "Email",
+    "email": "sskutushev@gmail.com",
+    "telegram_title": "Telegram",
+    "telegram": "@sskutushev",
+    "copyright": "© {{year}} DexSafe Wallet Pro. All rights reserved."
+  }
+}

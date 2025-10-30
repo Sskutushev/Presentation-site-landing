@@ -1,15 +1,16 @@
-import { ReactNode } from 'react'
-import { motion, HTMLMotionProps } from 'framer-motion'
+import { ReactNode, memo } from 'react';
+import { motion, HTMLMotionProps } from 'framer-motion';
 
 interface CardProps extends HTMLMotionProps<'div'> {
-  children: ReactNode
-  className?: string
-  onClick?: () => void
+  children: ReactNode;
+  className?: string;
+  onClick?: () => void;
 }
 
-export const Card = ({ children, className = '', onClick, ...props }: CardProps) => {
+const CardComponent = ({ children, className = '', onClick, ...props }: CardProps) => {
   return (
     <motion.div
+      data-testid="card-container"
       className={`        bg-c-bg-secondary
         rounded-xl
         p-6
@@ -18,8 +19,11 @@ export const Card = ({ children, className = '', onClick, ...props }: CardProps)
         ${className}
      `}
       onClick={onClick}
-      {...props}>
+      {...props}
+    >
       {children}
     </motion.div>
-  )
-}
+  );
+};
+
+export const Card = memo(CardComponent);

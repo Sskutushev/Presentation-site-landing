@@ -1,0 +1,29 @@
+Your configFile is invalid: C:\Users\sskut\Desktop\Pres\cypress.config.js
+
+It threw an error when required, check the stack trace below:
+
+cypress.config.js:1:26
+> 1 | const { defineConfig } = require("cypress");
+    |                          ^
+  2 |
+  3 | module.exports = defineConfig({
+  4 |   e2e: {
+  5 |     setupNodeEvents(on, config) {
+Stack trace
+SyntaxError: Error parsing C:\Users\sskut\Desktop\Pres\package.json: Expected double-quoted property name in JSON at position 626
+    at parse ()
+    at read (node:internal/modules/package_json_reader:80:16)
+    at readPackage (node:internal/modules/package_json_reader:141:10)
+    at Object.readPackageScope (node:internal/modules/package_json_reader:164:19)
+    at trySelf (node:internal/modules/cjs/loader:589:58)
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1184:24)
+    at m._resolveFilename (file:///C:/Users/sskut/AppData/Local/Cypress/Cache/15.5.0/Cypress/resources/app/node_modules/tsx/dist/register-B7jrtLTO.mjs:1:789)
+    at nextResolveSimple (C:\Users\sskut\AppData\Local\Cypress\Cache\15.5.0\Cypress\resources\app\node_modules\tsx\dist\register-D46fvsV_.cjs:4:1004)
+    at C:\Users\sskut\AppData\Local\Cypress\Cache\15.5.0\Cypress\resources\app\node_modules\tsx\dist\register-D46fvsV_.cjs:3:2630
+    at C:\Users\sskut\AppData\Local\Cypress\Cache\15.5.0\Cypress\resources\app\node_modules\tsx\dist\register-D46fvsV_.cjs:3:1542
+    at resolveTsPaths (C:\Users\sskut\AppData\Local\Cypress\Cache\15.5.0\Cypress\resources\app\node_modules\tsx\dist\register-D46fvsV_.cjs:4:760)
+    at Function._resolveFilename (C:\Users\sskut\AppData\Local\Cypress\Cache\15.5.0\Cypress\resources\app\node_modules\tsx\dist\register-D46fvsV_.cjs:4:1102)
+    at Module._load (node:internal/modules/cjs/loader:1038:27)
+    at Module.require (node:internal/modules/cjs/loader:1289:19)
+    at require (node:internal/modules/helpers:182:18)
+    at Object. (C:\Users\sskut\Desktop\Pres\cypress.config.js:1:26)

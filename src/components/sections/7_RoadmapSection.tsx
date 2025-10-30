@@ -1,47 +1,49 @@
-import { AnimatedSection } from '../common/AnimatedSection'
-import { Rocket, Server, LayoutTemplate, Smartphone } from 'lucide-react'
-import { motion } from 'framer-motion'
-import { staggerContainer, fadeInUp, fadeInLeft, fadeInRight } from '../../lib/motionPresets'
-
-const roadmap = [
-  {
-    icon: Server,
-    title: 'Фаза 1: Backend & UPA API',
-    text: 'Реализация бэкенд-логики UPA Engine, развертывание смарт-контрактов для DeFi и геймификации.',
-  },
-  {
-    icon: LayoutTemplate,
-    title: 'Фаза 2: Browser Extension',
-    text: 'Портирование функционала в расширение для Chrome, Firefox и Brave. Синхронизация с Mini App.',
-  },
-  {
-    icon: Smartphone,
-    title: 'Фаза 3: Mobile Native',
-    text: 'Запуск полноценных нативных приложений для iOS и Android для максимального охвата аудитории.',
-  },
-  {
-    icon: Rocket,
-    title: 'Фаза 4: P2P & Advanced',
-    text: 'Запуск P2P Маркетплейса, интеграция NFT, стейкинга и поддержки аппаратных кошельков.',
-  },
-]
+import { AnimatedSection } from '../common/AnimatedSection';
+import { SectionHeader } from '../common/SectionHeader';
+import { Rocket, Server, LayoutTemplate, Smartphone } from 'lucide-react';
+import { motion } from 'framer-motion';
+import { staggerContainer, fadeInLeft, fadeInRight } from '../../lib/motionPresets';
+import { useTranslation } from 'react-i18next'; // Хук для перевода
 
 export const RoadmapSection = () => {
+  const { t } = useTranslation(); // Хук для перевода
+
+  const roadmap = [
+    {
+      icon: Server,
+      title: t('roadmap.phases.0.title'),
+      text: t('roadmap.phases.0.text'),
+    },
+    {
+      icon: LayoutTemplate,
+      title: t('roadmap.phases.1.title'),
+      text: t('roadmap.phases.1.text'),
+    },
+    {
+      icon: Smartphone,
+      title: t('roadmap.phases.2.title'),
+      text: t('roadmap.phases.2.text'),
+    },
+    {
+      icon: Rocket,
+      title: t('roadmap.phases.3.title'),
+      text: t('roadmap.phases.3.text'),
+    },
+  ];
+
   return (
     <AnimatedSection id="roadmap" className="py-24 sm:py-32">
-      <motion.div variants={staggerContainer} initial="hidden" whileInView="show" viewport={{ once: true }}>
-        <motion.div variants={fadeInUp} className="text-center max-w-3xl mx-auto">
-          <div className="inline-flex items-center px-4 py-2 bg-c-bg-secondary rounded-full border border-c-border mb-6">
-            <span className="text-c-text-secondary text-sm">План развития</span>
-          </div>
-          
-          <h2 className="text-4xl md:text-5xl font-extrabold text-c-text-primary mb-6">
-            Масштабирование от MVP до Экосистемы
-          </h2>
-          <p className="text-xl text-c-text-secondary">
-            Четкий план развития продукта
-          </p>
-        </motion.div>
+      <motion.div
+        variants={staggerContainer}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true }}
+      >
+        <SectionHeader
+          badgeText={t('roadmap.badge')}
+          title={t('roadmap.title')}
+          description={t('roadmap.description')}
+        />
 
         {/* Горизонтальная/Вертикальная Дорожная карта */}
         <div className="mt-24">
@@ -54,23 +56,22 @@ export const RoadmapSection = () => {
 
             <div className="space-y-16">
               {roadmap.map((item, index) => {
-                const Icon = item.icon
-                const isOdd = index % 2 !== 0
+                const Icon = item.icon;
+                const isOdd = index % 2 !== 0;
                 return (
-                  <motion.div 
+                  <motion.div
                     key={index}
                     variants={isOdd ? fadeInRight : fadeInLeft}
                     className={`md:flex items-center md:relative ${isOdd ? 'md:flex-row-reverse' : ''}`}
                   >
                     {/* Контент */}
                     <div className={`md:w-1/2 ${isOdd ? 'md:pl-16' : 'md:pr-16'} md:ml-0 ml-12`}>
-                      <motion.div className="bg-c-bg-secondary p-8 rounded-3xl border border-c-border shadow-xl hover:border-c-primary/50 transition-all duration-300"
-                        whileHover={{y: -5, boxShadow: '0 0 25px rgba(0, 224, 190, 0.2)'}}
-                        transition={{duration: 0.2}}
+                      <motion.div
+                        className="bg-c-bg-secondary p-8 rounded-3xl border border-c-border shadow-xl hover:border-c-primary/50 transition-all duration-300"
+                        whileHover={{ y: -5, boxShadow: '0 0 25px rgba(0, 224, 190, 0.2)' }}
+                        transition={{ duration: 0.2 }}
                       >
-                        <h3 className="text-2xl font-bold text-c-primary mb-4">
-                          {item.title}
-                        </h3>
+                        <h3 className="text-2xl font-bold text-c-primary mb-4">{item.title}</h3>
                         <p className="text-c-text-secondary">{item.text}</p>
                       </motion.div>
                     </div>
@@ -84,12 +85,12 @@ export const RoadmapSection = () => {
                       </div>
                     </div>
                   </motion.div>
-                )
+                );
               })}
             </div>
           </div>
         </div>
       </motion.div>
     </AnimatedSection>
-  )
-}
+  );
+};
