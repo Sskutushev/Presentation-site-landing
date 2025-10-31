@@ -5,6 +5,7 @@ import { Menu, X, Globe } from 'lucide-react'; // Иконки для мобил
 import { useState } from 'react'; // Хук для управления состоянием
 import { motion, useScroll, useTransform } from 'framer-motion'; // Анимации и эффекты скролла
 import { useTranslation } from 'react-i18next'; // Хук для перевода
+import { ThemeToggle } from '../common/ThemeToggle/ThemeToggle'; // Компонент переключателя темы
 
 /**
  * Компонент шапки сайта
@@ -69,7 +70,7 @@ export const Header = () => {
           </Link>
 
           {/* Основной блок: Десктопная навигация */}
-          <nav className="hidden md:flex items-center space-x-8">
+          <nav className="hidden md:flex items-center space-x-4">
             {navItems.map((item) => (
               <Link
                 key={item.label}
@@ -77,7 +78,7 @@ export const Header = () => {
                 smooth={true}
                 duration={500}
                 offset={-80}
-                className="relative text-c-text-secondary hover:text-c-primary font-medium transition-colors cursor-pointer text-lg group"
+                className="relative text-c-text-secondary hover:text-c-primary font-medium transition-colors cursor-pointer text-sm group"
               >
                 {item.label}
                 <span className="absolute bottom-0 left-0 w-full h-0.5 bg-c-primary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out"></span>
@@ -90,8 +91,8 @@ export const Header = () => {
                 className="text-c-text-secondary hover:text-c-primary transition-colors flex items-center gap-1"
                 onClick={() => setLangMenuOpen(!langMenuOpen)}
               >
-                <Globe size={20} />
-                <span className="uppercase">{currentLang}</span>
+                <Globe size={18} />
+                <span className="uppercase text-sm">{currentLang}</span>
               </button>
 
               {langMenuOpen && (
@@ -111,6 +112,9 @@ export const Header = () => {
                 </div>
               )}
             </div>
+            
+            {/* Переключатель темы */}
+            <ThemeToggle />
           </nav>
 
           {/* Вспомогательный блок: Кнопка мобильного меню */}
@@ -121,7 +125,7 @@ export const Header = () => {
                 className="text-c-text-secondary hover:text-c-primary transition-colors flex items-center gap-1"
                 onClick={() => setLangMenuOpen(!langMenuOpen)}
               >
-                <Globe size={20} />
+                <Globe size={18} />
                 <span className="uppercase">{currentLang}</span>
               </button>
 
@@ -164,7 +168,7 @@ export const Header = () => {
                   smooth={true}
                   duration={500}
                   offset={-80}
-                  className="text-c-text-secondary hover:text-c-primary font-medium transition-colors cursor-pointer py-2 text-center"
+                  className="text-c-text-secondary hover:text-c-primary font-medium transition-colors cursor-pointer py-2 text-center text-base"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   {item.label}

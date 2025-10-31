@@ -7,13 +7,27 @@
 @layer base {
   body {
     @apply text-c-text-primary antialiased overflow-x-hidden;
-    background-color: #0d0f13; /* Резервный цвет фона */
+    background-color: #0d0f13; /* Цвет фона для темной темы по умолчанию */
     background-image: radial-gradient(
       ellipse at top,
       #1b1f28 0%,
       #0d0f13 100%
-    ); /* Радиальный градиент фона */
+    ); /* Радиальный градиент фона для темной темы */
     font-family: 'Inter', sans-serif; /* Основное семейство шрифтов */
+  }
+  
+  .dark body {
+    /* Оставляем без изменений, так как темная тема по умолчанию */
+  }
+  
+  .light body {
+    background-color: #FCFCFC; /* Цвет фона для светлой темы */
+    background-image: radial-gradient(
+      ellipse at top,
+      #F5F5F5 0%,
+      #FCFCFC 100%
+    ); /* Радиальный градиент фона для светлой темы */
+    color: #000000; /* Цвет текста для светлой темы */
   }
 
   /* Вспомогательный элемент: текстура шума */
@@ -26,8 +40,12 @@
     height: 100vh;
     pointer-events: none;
     background-image: url('/noise.svg'); /* Файл текстуры */
-    opacity: 0.05; /* Низкая прозрачность для субтльности */
+    opacity: 0.05; /* Низкая прозрачность для субтльности в темной теме */
     z-index: 100;
+  }
+  
+  .light body::before {
+    opacity: 0.02; /* Прозрачность для светлой темы */
   }
 
   /* Основной элемент: плавная прокрутка */
@@ -40,13 +58,111 @@
 ::-webkit-scrollbar {
   width: 6px;
 }
+
+/* Темная тема: кастомный скроллбар (по умолчанию) */
 ::-webkit-scrollbar-track {
-  background: #1a1d25; /* Цвет фона полосы прокрутки */
+  background: #1a1d25; /* Цвет фона полосы прокрутки для темной темы */
 }
 ::-webkit-scrollbar-thumb {
-  background: #2a2d35; /* Цвет ползунка прокрутки */
+  background: #2a2d35; /* Цвет ползунка прокрутки для темной темы */
   border-radius: 3px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #00e0be; /* Цвет ползунка при наведении */
+  background: #00e0be; /* Цвет ползунка при наведении для темной темы */
 }
+
+/* Светлая тема: кастомный скроллбар */
+.light ::-webkit-scrollbar-track {
+  background: #F0F0F0; /* Цвет фона полосы прокрутки для светлой темы */
+}
+.light ::-webkit-scrollbar-thumb {
+  background: #DEDEDE; /* Цвет ползунка прокрутки для светлой темы */
+}
+.light ::-webkit-scrollbar-thumb:hover {
+  background: #FF2B00; /* Цвет ползунка при наведении для светлой темы */
+}
+
+/* Дополнительные анимации для кнопок */
+.hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 224, 190, 0.3);
+}
+
+/* Светлая тема: hover-lift */
+.light .hover-lift:hover {
+  box-shadow: 0 10px 25px rgba(255, 43, 0, 0.3);
+}
+
+/* Анимация мерцания */
+.twinkle {
+  animation: twinkle 2s infinite;
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+/* Зум-анимация */
+.zoom-in-out {
+  animation: zoomInOut 3s infinite;
+}
+
+@keyframes zoomInOut {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+/* Анимация плавающего эффекта */
+.float {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* Анимация вращения */
+.rotate {
+  animation: rotate 10s linear infinite;
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Анимация мерцания подсветки */
+.glow-pulse {
+  animation: glow-pulse 2s infinite alternate;
+}
+
+@keyframes glow-pulse {
+  from { 
+    box-shadow: 0 0 5px rgba(0, 224, 190, 0.3);
+  }
+  to { 
+    box-shadow: 0 0 20px rgba(0, 224, 190, 0.6);
+  }
+}
+
+/* Анимация мерцания подсветки для светлой темы */
+.light .glow-pulse {
+  animation: light-glow-pulse 2s infinite alternate;
+}
+
+@keyframes light-glow-pulse {
+  from { 
+    box-shadow: 0 0 5px rgba(255, 43, 0, 0.3);
+  }
+  to { 
+    box-shadow: 0 0 20px rgba(255, 43, 0, 0.6);
+  }
+}
+
+
