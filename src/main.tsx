@@ -15,8 +15,7 @@ import i18next from './i18n'; // Конфигурация i18n
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <I18nextProvider i18n={i18next}>
-      {' '}
-      <App /> // Рендерит главный компонент
+      <App />
     </I18nextProvider>
   </React.StrictMode>
 );

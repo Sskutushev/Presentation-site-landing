@@ -30,7 +30,7 @@ export const ContactSection = () => {
           description={t('contact.description')}
         />
 
-        <motion.div variants={fadeInUp} className="mb-12">
+        <motion.div variants={fadeInUp} className="mt-16">
           <Button
             variant="primary"
             className="px-10 py-5 text-xl animate-pulse-slow mx-auto"

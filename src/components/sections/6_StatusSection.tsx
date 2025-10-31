@@ -25,7 +25,7 @@ export const StatusSection = () => {
   ];
 
   return (
-    <AnimatedSection id="status" className="py-24 sm:py-32">
+    <AnimatedSection id="status" className="py-24 pb-10 sm:py-32 sm:pb-16">
       <motion.div
         variants={staggerContainer}
         initial="hidden"

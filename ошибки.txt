@@ -1,0 +1,68 @@
+4_UpaSection.tsx:106 Uncaught ReferenceError: SpringAnime is not defined
+    at UpaSection (4_UpaSection.tsx:106:14)
+
+chunk-GKJBSOWT.js?v=a266ba80:521 Warning: validateDOMNesting(...): <tr> cannot appear as a child of <div>.
+    at tr
+    at div
+    at MotionComponent (http://localhost:5173/node_modules/.vite/deps/framer-motion.js?v=a266ba80:277:40)
+    at AnimatedElement (http://localhost:5173/src/components/animations/AnimatedElement.tsx:19:3)
+    at tbody
+    at table
+    at div
+    at StaggerAnime (http://localhost:5173/src/components/animations/AnimeJS.tsx:66:3)
+    at div
+    at MotionComponent (http://localhost:5173/node_modules/.vite/deps/framer-motion.js?v=a266ba80:277:40)
+    at AnimatedElement (http://localhost:5173/src/components/animations/AnimatedElement.tsx:19:3)
+    at div
+    at div
+    at div
+    at Container (http://localhost:5173/src/components/Container.tsx:17:29)
+    at section
+    at MotionComponent (http://localhost:5173/node_modules/.vite/deps/framer-motion.js?v=a266ba80:277:40)
+    at div
+    at AnimeDiv (http://localhost:5173/src/components/animations/AnimeJS.tsx:21:3)
+    at AnimatedSection (http://localhost:5173/src/components/common/AnimatedSection.tsx:20:35)
+    at FeaturesTable (http://localhost:5173/src/components/sections/5_FeaturesTable.tsx:27:17)
+    at div
+    at main
+    at App
+    at I18nextProvider (http://localhost:5173/node_modules/.vite/deps/react-i18next.js?v=a266ba80:1395:3)
+chunk-GKJBSOWT.js?v=a266ba80:521 Warning: validateDOMNesting(...): <div> cannot appear as a child of <tbody>.
+    at div
+    at MotionComponent (http://localhost:5173/node_modules/.vite/deps/framer-motion.js?v=a266ba80:277:40)
+    at AnimatedElement (http://localhost:5173/src/components/animations/AnimatedElement.tsx:19:3)
+    at tbody
+    at table
+    at div
+    at StaggerAnime (http://localhost:5173/src/components/animations/AnimeJS.tsx:66:3)
+    at div
+    at MotionComponent (http://localhost:5173/node_modules/.vite/deps/framer-motion.js?v=a266ba80:277:40)
+    at AnimatedElement (http://localhost:5173/src/components/animations/AnimatedElement.tsx:19:3)
+    at div
+    at div
+    at div
+    at Container (http://localhost:5173/src/components/Container.tsx:17:29)
+    at section
+    at MotionComponent (http://localhost:5173/node_modules/.vite/deps/framer-motion.js?v=a266ba80:277:40)
+    at div
+    at AnimeDiv (http://localhost:5173/src/components/animations/AnimeJS.tsx:21:3)
+    at AnimatedSection (http://localhost:5173/src/components/common/AnimatedSection.tsx:20:35)
+    at FeaturesTable (http://localhost:5173/src/components/sections/5_FeaturesTable.tsx:27:17)
+    at div
+    at main
+    at App
+    at I18nextProvider (http://localhost:5173/node_modules/.vite/deps/react-i18next.js?v=a266ba80:1395:3)
+4_UpaSection.tsx:106 Uncaught ReferenceError: SpringAnime is not defined
+    at UpaSection (4_UpaSection.tsx:106:14)
+chunk-GKJBSOWT.js?v=a266ba80:14032 The above error occurred in the <UpaSection> component:
+
+    at UpaSection (http://localhost:5173/src/components/sections/4_UpaSection.tsx:28:17)
+    at div
+    at main
+    at App
+    at I18nextProvider (http://localhost:5173/node_modules/.vite/deps/react-i18next.js?v=a266ba80:1395:3)
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries.
+chunk-GKJBSOWT.js?v=a266ba80:19413 Uncaught ReferenceError: SpringAnime is not defined
+    at UpaSection (4_UpaSection.tsx:106:14)

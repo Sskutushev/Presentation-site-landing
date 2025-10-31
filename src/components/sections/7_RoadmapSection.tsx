@@ -33,7 +33,7 @@ export const RoadmapSection = () => {
   ];
 
   return (
-    <AnimatedSection id="roadmap" className="py-24 sm:py-32">
+    <AnimatedSection id="roadmap" className="pt-10 pb-24 sm:pt-16 sm:pb-32">
       <motion.div
         variants={staggerContainer}
         initial="hidden"

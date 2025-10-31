@@ -39,7 +39,7 @@ export const SolutionSection = () => {
             badgeIcon={Sparkles}
             title={t('solution.title')}
             description={t('solution.description')}
-            className="text-center lg:text-left !max-w-none"
+            className="text-center lg:text-left !max-w-none mb-10"
           />
 
           <motion.div
