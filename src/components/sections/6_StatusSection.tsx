@@ -35,11 +35,8 @@ export const StatusSection = () => {
         <SectionHeader
           badgeText={t('status.badge')}
           title={t('status.title')}
-          description={t(
-            'status.description',
-            'Вы получаете готовый, безопасный и оптимизированный Frontend-продукт, экономя '
-          )}
-          descriptionHighlight={t('status.description_highlight', 'минимум 6 месяцев')}
+          description={t('status.description')}
+          descriptionHighlight={t('status.description_highlight', '6 месяцев')}
         />
 
         {/* Progress Bar */}

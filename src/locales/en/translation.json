@@ -127,7 +127,8 @@
   "status": {
     "badge": "Current Status",
     "title": "Ready product, not just an idea",
-    "description": "You get a ready, secure and optimized Frontend product, saving at least 6 months of R&D team work.",
+    "description": "You get a ready, secure and optimized Frontend product, saving at least ",
+    "description_highlight": "6 months",
     "done_title": "✅ Implemented",
     "ui_ready_title": "🟠 UI Ready (Backend Required)",
     "done_items": [
