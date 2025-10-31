@@ -45,19 +45,10 @@ export const SectionHeader = ({
       <h2 className="text-4xl md:text-5xl font-extrabold text-c-text-primary mb-6">{title}</h2>
 
       <p className="text-xl text-c-text-secondary max-w-3xl mx-auto">
-        {description.split(descriptionHighlight || '').map((part, index, array) => {
-          if (index === array.length - 1) {
-            return <span key={index}>{part}</span>;
-          }
-          return (
-            <Fragment key={index}>
-              <span>{part}</span>
-              {descriptionHighlight && (
-                <span className="text-c-primary font-bold">{descriptionHighlight}</span>
-              )}
-            </Fragment>
-          );
-        })}
+        {description}
+        {descriptionHighlight && (
+          <span className="text-c-primary font-bold">{descriptionHighlight}</span>
+        )}
       </p>
 
       {children}

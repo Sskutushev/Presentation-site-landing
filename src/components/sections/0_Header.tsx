@@ -5,7 +5,6 @@ import { Menu, X, Globe } from 'lucide-react'; // Иконки для мобил
 import { useState } from 'react'; // Хук для управления состоянием
 import { motion, useScroll, useTransform } from 'framer-motion'; // Анимации и эффекты скролла
 import { useTranslation } from 'react-i18next'; // Хук для перевода
-import { ThemeToggle } from '../common/ThemeToggle/ThemeToggle'; // Компонент переключателя темы
 
 /**
  * Компонент шапки сайта
@@ -113,8 +112,7 @@ export const Header = () => {
               )}
             </div>
             
-            {/* Переключатель темы */}
-            <ThemeToggle />
+
           </nav>
 
           {/* Вспомогательный блок: Кнопка мобильного меню */}
