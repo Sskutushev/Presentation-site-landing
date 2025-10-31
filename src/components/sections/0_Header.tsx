@@ -147,9 +147,6 @@ export const Header = () => {
               )}
             </div>
 
-            {/* Переключатель темы для мобильных */}
-            <ThemeToggle className="md:hidden" />
-            
             <button
               className="md:hidden text-c-text-primary"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}

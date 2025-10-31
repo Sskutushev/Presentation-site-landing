@@ -5,32 +5,32 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Основные цвета (для светлой темы)
-        'c-bg-primary': '#FCFCFC',
-        'c-bg-secondary': '#F0F0F0',
-        'c-bg-tertiary': '#DEDEDE',
-        'c-text-primary': '#000000',
-        'c-text-secondary': '#666666',
-        'c-text-tertiary': '#9CA3AF',
-        'c-primary': '#FF2B00',
-        'c-primary-hover': '#AA1D00',
-        'c-success': '#26DE88',
+        // Основные цвета (для светлой темы), используемые когда НЕТ класса dark
+        'c-bg-primary': '#0d0f13',
+        'c-bg-secondary': '#1A1D25',
+        'c-bg-tertiary': '#2A2D35',
+        'c-text-primary': '#E5E7EB',
+        'c-text-secondary': '#9CA3AF',
+        'c-text-tertiary': '#6B7280',
+        'c-primary': '#00E0BE',
+        'c-primary-hover': '#00C4A7',
+        'c-success': '#10B981',
         'c-danger': '#EF4444',
-        'c-border': '#DEDEDE',
+        'c-border': '#2A2D35',
         
-        // Цвета для темной темы (с префиксом dark:)
+        // Цвета для светлой темы (с префиксом dark:)
         'dark': {
-          'c-bg-primary': '#0d0f13',
-          'c-bg-secondary': '#1A1D25',
-          'c-bg-tertiary': '#2A2D35',
-          'c-text-primary': '#E5E7EB',
-          'c-text-secondary': '#9CA3AF',
-          'c-text-tertiary': '#6B7280',
-          'c-primary': '#00E0BE',
-          'c-primary-hover': '#00C4A7',
-          'c-success': '#10B981',
+          'c-bg-primary': '#FCFCFC',
+          'c-bg-secondary': '#F0F0F0',
+          'c-bg-tertiary': '#DEDEDE',
+          'c-text-primary': '#000000',
+          'c-text-secondary': '#666666',
+          'c-text-tertiary': '#9CA3AF',
+          'c-primary': '#FF2B00',
+          'c-primary-hover': '#AA1D00',
+          'c-success': '#26DE88',
           'c-danger': '#EF4444',
-          'c-border': '#2A2D35',
+          'c-border': '#DEDEDE',
         },
       },
       fontFamily: {
